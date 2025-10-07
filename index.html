@@ -21,7 +21,7 @@
         .table-container {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 60px);
             overflow: auto;
             border: 1px solid #ddd;
         }
@@ -49,10 +49,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 5px;
         }
 
         h1 {
             margin: 0;
+            font-size: 18px;
         }
 
         .language-btn {
@@ -88,7 +90,7 @@
     </style>
 </head>
 
-<body style="margin: 0; padding: 5px;">
+<body style="margin: 0 0 5px 0; padding: 5px;">
     <div class="title-container">
         <h1 data-en="Responsibility Assignment Matrix (RAM)" data-vi="Responsibility Assignment Matrix (RAM)">Responsibility Assignment Matrix (RAM)</h1>
         <button id="language-toggle" class="language-btn">Tiếng Việt / English</button>
@@ -320,20 +322,6 @@
                 <td></td>
             </tr>
             <tr>
-                <td class="first-column" data-en="Compliance and Governance" data-vi="Compliance and Governance">Compliance and Governance</td>
-                <td data-en="Ensure architectural compliance" data-vi="Đảm bảo tuân thủ kiến trúc">Ensure architectural compliance</td>
-                <td data-en="Ensure project compliance" data-vi="Đảm bảo tuân thủ dự án">Ensure project compliance</td>
-                <td data-en="Ensure Agile best practices" data-vi="Đảm bảo thực hành tốt nhất Agile">Ensure Agile best practices</td>
-                <td data-en="Ensure business compliance" data-vi="Đảm bảo tuân thủ kinh doanh">Ensure business compliance</td>
-                <td></td>
-                <td data-en="Ensure technical compliance" data-vi="Đảm bảo tuân thủ kỹ thuật">Ensure technical compliance</td>
-                <td data-en="Adhere to standards" data-vi="Tuân thủ tiêu chuẩn">Adhere to standards</td>
-                <td data-en="Ensure quality standards" data-vi="Đảm bảo tiêu chuẩn chất lượng">Ensure quality standards</td>
-                <td data-en="Ensure operational compliance" data-vi="Đảm bảo tuân thủ vận hành">Ensure operational compliance</td>
-                <td data-en="Ensure cloud compliance" data-vi="Đảm bảo tuân thủ đám mây">Ensure cloud compliance</td>
-                <td data-en="Ensure security compliance" data-vi="Đảm bảo tuân thủ bảo mật">Ensure security compliance</td>
-            </tr>
-            <tr>
                 <td class="first-column" data-en="Innovation and Research" data-vi="Đổi mới và Nghiên cứu">Innovation and Research</td>
                 <td data-en="Research new architectural patterns" data-vi="Nghiên cứu các mẫu kiến trúc mới">Research new architectural patterns</td>
                 <td></td>
@@ -374,20 +362,6 @@
                 <td data-en="Manage DR infrastructure" data-vi="Quản lý hạ tầng DR">Manage DR infrastructure</td>
                 <td data-en="Design cloud DR solutions" data-vi="Thiết kế giải pháp DR đám mây">Design cloud DR solutions</td>
                 <td data-en="Ensure security in DR" data-vi="Đảm bảo bảo mật trong DR">Ensure security in DR</td>
-            </tr>
-            <tr>
-                <td class="first-column" data-en="Vendor Management" data-vi="Quản lý Nhà cung cấp">Vendor Management</td>
-                <td data-en="Evaluate architectural impacts of vendors" data-vi="Đánh giá tác động kiến trúc của nhà cung cấp">Evaluate architectural impacts of vendors</td>
-                <td data-en="Manage vendor contracts" data-vi="Quản lý hợp đồng nhà cung cấp">Manage vendor contracts</td>
-                <td></td>
-                <td data-en="Assess vendor business fit" data-vi="Đánh giá sự phù hợp kinh doanh của nhà cung cấp">Assess vendor business fit</td>
-                <td></td>
-                <td data-en="Assess vendor technical fit" data-vi="Đánh giá sự phù hợp kỹ thuật của nhà cung cấp">Assess vendor technical fit</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td data-en="Manage cloud vendors" data-vi="Quản lý nhà cung cấp đám mây">Manage cloud vendors</td>
-                <td data-en="Assess vendor security" data-vi="Đánh giá bảo mật nhà cung cấp">Assess vendor security</td>
             </tr>
         </table>
     </div>
