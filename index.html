@@ -87,6 +87,88 @@
             left: 0;
             z-index: 2;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .title-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .language-btn {
+                align-self: flex-end;
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: #f9f9f9;
+            }
+
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                text-align: left;
+            }
+
+            td:before {
+                position: absolute;
+                top: 8px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            .first-column {
+                font-weight: bold;
+                font-size: 16px;
+                background-color: #e9ecef;
+                padding: 15px 10px;
+                margin: -10px -10px 10px -10px;
+                border-radius: 5px 5px 0 0;
+                color: #495057;
+            }
+
+            .first-column:before {
+                display: none;
+            }
+
+            /* Specific labels for each column */
+            td:nth-child(1):before { content: "Activity"; }
+            td:nth-child(2):before { content: "Solution Architect"; }
+            td:nth-child(3):before { content: "Project Manager"; }
+            td:nth-child(4):before { content: "Scrum Master"; }
+            td:nth-child(5):before { content: "Business Analyst"; }
+            td:nth-child(6):before { content: "External PO"; }
+            td:nth-child(7):before { content: "Technical Leader"; }
+            td:nth-child(8):before { content: "Development Team"; }
+            td:nth-child(9):before { content: "QA"; }
+            td:nth-child(10):before { content: "DevOps"; }
+            td:nth-child(11):before { content: "Cloud Specialist"; }
+            td:nth-child(12):before { content: "Security Specialist"; }
+        }
     </style>
 </head>
 
