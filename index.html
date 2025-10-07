@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsibility Assignment Matrix (RAM)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Responsibility Assignment Matrix (RAM) - Ma Trận Phân Công Trách Nhiệm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Lexend Deca', sans-serif;
             font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
         }
 
         .table-container {
             position: relative;
             width: 100%;
-            height: 90vh;
+            height: 100vh;
             overflow: auto;
             border: 1px solid #ddd;
         }
@@ -29,7 +35,7 @@
         th,
         td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 5px;
             text-align: left;
             vertical-align: middle;
         }
@@ -39,9 +45,29 @@
             background-color: #f2f2f2;
         }
 
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         h1 {
-            font-size: 24px;
-            margin-bottom: 16px;
+            margin: 0;
+        }
+
+        .language-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 3px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0;
+            transition: background-color 0.3s;
+        }
+
+        .language-btn:hover {
+            background-color: #0056b3;
         }
 
         th,
@@ -62,306 +88,334 @@
     </style>
 </head>
 
-<body>
-    <h1>Responsibility Assignment Matrix (RAM)</h1>
+<body style="margin: 0; padding: 5px;">
+    <div class="title-container">
+        <h1 data-en="Responsibility Assignment Matrix (RAM)" data-vi="Responsibility Assignment Matrix (RAM)">Responsibility Assignment Matrix (RAM)</h1>
+        <button id="language-toggle" class="language-btn">Tiếng Việt / English</button>
+    </div>
     <div class="table-container">
         <table>
             <tr>
-                <th class="first-column">Activity</th>
-                <th>Solution Architect</th>
-                <th>Project Manager</th>
-                <th>Scrum Master</th>
-                <th>Business Analyst (Internal PO)</th>
-                <th>External PO</th>
-                <th>Technical Leader</th>
-                <th>Development Team</th>
-                <th>QA</th>
-                <th>DevOps</th>
-                <th>Cloud Specialist</th>
-                <th>Security Specialist</th>
+                <th class="first-column" data-en="Activity" data-vi="Hoạt động">Activity</th>
+                <th data-en="Solution Architect" data-vi="Solution Architect">Solution Architect</th>
+                <th data-en="Project Manager" data-vi="Quản lý Dự án">Project Manager</th>
+                <th data-en="Scrum Master" data-vi="Scrum Master">Scrum Master</th>
+                <th data-en="Business Analyst (Internal PO)" data-vi="BA (PO Nội bộ)">Business Analyst (Internal PO)</th>
+                <th data-en="External PO" data-vi="PO Bên ngoài">External PO</th>
+                <th data-en="Technical Leader" data-vi="Technical Leader">Technical Leader</th>
+                <th data-en="Development Team" data-vi="Đội Phát triển">Development Team</th>
+                <th data-en="QA" data-vi="QA">QA</th>
+                <th data-en="DevOps" data-vi="DevOps">DevOps</th>
+                <th data-en="Cloud Specialist" data-vi="Cloud Specialist">Cloud Specialist</th>
+                <th data-en="Security Specialist" data-vi="Security Specialist">Security Specialist</th>
             </tr>
             <tr>
-                <td class="first-column">Project Initiation</td>
-                <td>Define high-level architecture vision</td>
-                <td>Develop project charter and plan</td>
-                <td>Establish Agile framework</td>
-                <td>Gather initial business requirements</td>
-                <td>Provide business context and vision</td>
-                <td>Assess technical feasibility</td>
+                <td class="first-column" data-en="Project Initiation" data-vi="Khởi tạo Dự án">Project Initiation</td>
+                <td data-en="Define high-level architecture vision" data-vi="Xác định tầm nhìn kiến trúc cấp cao">Define high-level architecture vision</td>
+                <td data-en="Develop project charter and plan" data-vi="Phát triển hiến chương dự án và kế hoạch">Develop project charter and plan</td>
+                <td data-en="Establish Agile framework" data-vi="Thiết lập khung làm việc Agile">Establish Agile framework</td>
+                <td data-en="Gather initial business requirements" data-vi="Thu thập yêu cầu kinh doanh ban đầu">Gather initial business requirements</td>
+                <td data-en="Provide business context and vision" data-vi="Cung cấp bối cảnh kinh doanh và tầm nhìn">Provide business context and vision</td>
+                <td data-en="Assess technical feasibility" data-vi="Đánh giá tính khả thi kỹ thuật">Assess technical feasibility</td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>Evaluate cloud strategy</td>
-                <td>Assess security requirements</td>
+                <td data-en="Evaluate cloud strategy" data-vi="Đánh giá chiến lược đám mây">Evaluate cloud strategy</td>
+                <td data-en="Assess security requirements" data-vi="Đánh giá yêu cầu bảo mật">Assess security requirements</td>
             </tr>
             <tr>
-                <td class="first-column">Stakeholder Management</td>
-                <td>Communicate architecture decisions</td>
-                <td>Manage stakeholder expectations</td>
-                <td>Facilitate team communication</td>
-                <td>Liaise between business and tech teams</td>
-                <td>Represent end-users and stakeholders</td>
+                <td class="first-column" data-en="Stakeholder Management" data-vi="Quản lý Bên liên quan">Stakeholder Management</td>
+                <td data-en="Communicate architecture decisions" data-vi="Truyền đạt quyết định kiến trúc">Communicate architecture decisions</td>
+                <td data-en="Manage stakeholder expectations" data-vi="Quản lý kỳ vọng của bên liên quan">Manage stakeholder expectations</td>
+                <td data-en="Facilitate team communication" data-vi="Tạo điều kiện giao tiếp nhóm">Facilitate team communication</td>
+                <td data-en="Liaise between business and tech teams" data-vi="Liên kết giữa nhóm kinh doanh và kỹ thuật">Liaise between business and tech teams</td>
+                <td data-en="Represent end-users and stakeholders" data-vi="Đại diện cho người dùng cuối và bên liên quan">Represent end-users and stakeholders</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="first-column">Requirements Gathering</td>
-                <td>Ensure technical feasibility</td>
-                <td>Manage scope</td>
-                <td>Facilitate requirements workshops</td>
-                <td>Analyze and document requirements</td>
-                <td>Set high-level requirements</td>
-                <td>Provide technical input</td>
-                <td>Provide implementation insights</td>
-                <td></td>
-                <td></td>
-                <td>Advise on cloud capabilities</td>
-                <td>Define security requirements</td>
-            </tr>
-            <tr>
-                <td class="first-column">Backlog Management</td>
-                <td>Provide architectural user stories</td>
-                <td></td>
-                <td>Maintain and groom backlog</td>
-                <td>Refine and prioritize backlog items</td>
-                <td>Set priorities</td>
-                <td>Estimate technical complexity</td>
-                <td>Estimate effort</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td class="first-column">System Design</td>
-                <td>Create architecture design</td>
-                <td>Ensure alignment with project goals</td>
+                <td class="first-column" data-en="Requirements Gathering" data-vi="Thu thập Yêu cầu">Requirements Gathering</td>
+                <td data-en="Ensure technical feasibility" data-vi="Đảm bảo tính khả thi kỹ thuật">Ensure technical feasibility</td>
+                <td data-en="Manage scope" data-vi="Quản lý phạm vi">Manage scope</td>
+                <td data-en="Facilitate requirements workshops" data-vi="Tổ chức hội thảo yêu cầu">Facilitate requirements workshops</td>
+                <td data-en="Analyze and document requirements" data-vi="Phân tích và ghi chép yêu cầu">Analyze and document requirements</td>
+                <td data-en="Set high-level requirements" data-vi="Thiết lập yêu cầu cấp cao">Set high-level requirements</td>
+                <td data-en="Provide technical input" data-vi="Cung cấp đầu vào kỹ thuật">Provide technical input</td>
+                <td data-en="Provide implementation insights" data-vi="Cung cấp hiểu biết về triển khai">Provide implementation insights</td>
                 <td></td>
-                <td>Provide business process insights</td>
-                <td>Review for business alignment</td>
-                <td>Lead technical design</td>
-                <td>Contribute to design</td>
                 <td></td>
-                <td></td>
-                <td>Design cloud architecture</td>
-                <td>Design security measures</td>
+                <td data-en="Advise on cloud capabilities" data-vi="Tư vấn về khả năng đám mây">Advise on cloud capabilities</td>
+                <td data-en="Define security requirements" data-vi="Xác định yêu cầu bảo mật">Define security requirements</td>
             </tr>
             <tr>
-                <td class="first-column">Sprint Planning</td>
-                <td>Provide architectural guidance</td>
+                <td class="first-column" data-en="Backlog Management" data-vi="Backlog Management">Backlog Management</td>
+                <td data-en="Provide architectural user stories" data-vi="Cung cấp user stories kiến trúc">Provide architectural user stories</td>
                 <td></td>
-                <td>Facilitate sprint planning</td>
-                <td>Clarify requirements</td>
-                <td></td>
-                <td>Lead technical planning</td>
-                <td>Participate in planning</td>
-                <td>Plan test scenarios</td>
-                <td>Plan infrastructure needs</td>
-                <td>Plan cloud resource allocation</td>
-                <td>Plan security implementations</td>
-            </tr>
-            <tr>
-                <td class="first-column">Implementation</td>
-                <td>Ensure alignment with architecture</td>
-                <td>Monitor progress</td>
-                <td>Remove impediments</td>
-                <td>Clarify business rules</td>
-                <td></td>
-                <td>Oversee technical implementation</td>
-                <td>Develop features</td>
-                <td></td>
-                <td></td>
-                <td>Implement cloud components</td>
-                <td>Implement security measures</td>
-            </tr>
-            <tr>
-                <td class="first-column">Code Review</td>
-                <td>Review critical architectural components</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Lead code reviews</td>
-                <td>Participate in code reviews</td>
-                <td></td>
-                <td></td>
-                <td>Review cloud-specific code</td>
-                <td>Review security-critical code</td>
-            </tr>
-            <tr>
-                <td class="first-column">Testing</td>
-                <td>Define test strategy</td>
-                <td></td>
-                <td></td>
-                <td>Define acceptance criteria</td>
-                <td>Review test results</td>
-                <td>Define technical test scenarios</td>
-                <td>Create unit tests</td>
-                <td>Execute tests, create test cases</td>
-                <td>Test deployment pipelines</td>
-                <td>Test cloud integrations</td>
-                <td>Perform security testing</td>
-            </tr>
-            <tr>
-                <td class="first-column">Continuous Integration</td>
-                <td>Ensure CI aligns with architecture</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Set up CI pipelines</td>
-                <td>Maintain CI practices</td>
-                <td>Automate tests</td>
-                <td>Manage CI/CD pipeline</td>
-                <td>Integrate cloud in CI/CD</td>
-                <td>Ensure security in CI/CD</td>
-            </tr>
-            <tr>
-                <td class="first-column">Deployment</td>
-                <td>Oversee architectural aspects</td>
-                <td>Coordinate release</td>
-                <td></td>
-                <td>Verify business requirements are met</td>
-                <td>Approve release</td>
-                <td>Oversee technical aspects</td>
-                <td>Support deployment</td>
-                <td>Verify deployment</td>
-                <td>Execute deployment</td>
-                <td>Manage cloud deployment</td>
-                <td>Verify security in deployment</td>
-            </tr>
-            <tr>
-                <td class="first-column">Performance Optimization</td>
-                <td>Identify architectural optimizations</td>
-                <td></td>
-                <td></td>
-                <td>Prioritize optimization efforts</td>
-                <td></td>
-                <td>Lead optimization efforts</td>
-                <td>Implement optimizations</td>
-                <td>Performance testing</td>
-                <td>Monitor system performance</td>
-                <td>Optimize cloud resources</td>
-                <td>Security optimizations</td>
-            </tr>
-            <tr>
-                <td class="first-column">Maintenance and Support</td>
-                <td>Provide architectural support</td>
-                <td></td>
-                <td></td>
-                <td>Gather feedback for improvements</td>
-                <td>Provide feedback</td>
-                <td>Oversee technical support</td>
-                <td>Resolve issues</td>
-                <td>Regression testing</td>
-                <td>Maintain infrastructure</td>
-                <td>Manage cloud resources</td>
-                <td>Monitor security threats</td>
-            </tr>
-            <tr>
-                <td class="first-column">Documentation</td>
-                <td>Document architecture decisions</td>
-                <td>Ensure project documentation</td>
-                <td>Document Agile processes</td>
-                <td>Document business processes</td>
-                <td></td>
-                <td>Document technical specifications</td>
-                <td>Document code</td>
-                <td>Document test cases</td>
-                <td>Document infrastructure</td>
-                <td>Document cloud architecture</td>
-                <td>Document security measures</td>
-            </tr>
-            <tr>
-                <td class="first-column">Knowledge Transfer</td>
-                <td>Lead architecture knowledge transfer</td>
-                <td>Facilitate team knowledge sharing</td>
-                <td></td>
-                <td>Ensure business knowledge transfer</td>
-                <td></td>
-                <td>Lead technical knowledge transfer</td>
-                <td>Participate in knowledge sharing</td>
+                <td data-en="Maintain and groom backlog" data-vi="Duy trì và chăm sóc backlog">Maintain and groom backlog</td>
+                <td data-en="Refine and prioritize backlog items" data-vi="Tinh chỉnh và ưu tiên các mục backlog">Refine and prioritize backlog items</td>
+                <td data-en="Set priorities" data-vi="Thiết lập ưu tiên">Set priorities</td>
+                <td data-en="Estimate technical complexity" data-vi="Ước tính độ phức tạp kỹ thuật">Estimate technical complexity</td>
+                <td data-en="Estimate effort" data-vi="Ước tính nỗ lực">Estimate effort</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td class="first-column">Compliance and Governance</td>
-                <td>Ensure architectural compliance</td>
-                <td>Ensure project compliance</td>
-                <td>Ensure Agile best practices</td>
-                <td>Ensure business compliance</td>
+                <td class="first-column" data-en="System Design" data-vi="System Design">System Design</td>
+                <td data-en="Create architecture design" data-vi="Tạo thiết kế kiến trúc">Create architecture design</td>
+                <td data-en="Ensure alignment with project goals" data-vi="Đảm bảo phù hợp với mục tiêu dự án">Ensure alignment with project goals</td>
                 <td></td>
-                <td>Ensure technical compliance</td>
-                <td>Adhere to standards</td>
-                <td>Ensure quality standards</td>
-                <td>Ensure operational compliance</td>
-                <td>Ensure cloud compliance</td>
-                <td>Ensure security compliance</td>
+                <td data-en="Provide business process insights" data-vi="Cung cấp hiểu biết về quy trình kinh doanh">Provide business process insights</td>
+                <td data-en="Review for business alignment" data-vi="Đánh giá sự phù hợp với kinh doanh">Review for business alignment</td>
+                <td data-en="Lead technical design" data-vi="Dẫn dắt thiết kế kỹ thuật">Lead technical design</td>
+                <td data-en="Contribute to design" data-vi="Đóng góp vào thiết kế">Contribute to design</td>
+                <td></td>
+                <td></td>
+                <td data-en="Design cloud architecture" data-vi="Thiết kế kiến trúc đám mây">Design cloud architecture</td>
+                <td data-en="Design security measures" data-vi="Thiết kế các biện pháp bảo mật">Design security measures</td>
             </tr>
             <tr>
-                <td class="first-column">Innovation and Research</td>
-                <td>Research new architectural patterns</td>
+                <td class="first-column" data-en="Sprint Planning" data-vi="Lập kế hoạch Sprint">Sprint Planning</td>
+                <td data-en="Provide architectural guidance" data-vi="Cung cấp hướng dẫn kiến trúc">Provide architectural guidance</td>
                 <td></td>
+                <td data-en="Facilitate sprint planning" data-vi="Tạo điều kiện lập kế hoạch sprint">Facilitate sprint planning</td>
+                <td data-en="Clarify requirements" data-vi="Làm rõ yêu cầu">Clarify requirements</td>
                 <td></td>
-                <td>Research business innovations</td>
-                <td>Provide market insights</td>
-                <td>Research new technologies</td>
-                <td>Experiment with new tech</td>
-                <td>Research testing innovations</td>
-                <td>Research DevOps innovations</td>
-                <td>Research cloud innovations</td>
-                <td>Research security innovations</td>
+                <td data-en="Lead technical planning" data-vi="Dẫn dắt kế hoạch kỹ thuật">Lead technical planning</td>
+                <td data-en="Participate in planning" data-vi="Tham gia vào kế hoạch">Participate in planning</td>
+                <td data-en="Plan test scenarios" data-vi="Lập kế hoạch kịch bản kiểm thử">Plan test scenarios</td>
+                <td data-en="Plan infrastructure needs" data-vi="Lập kế hoạch nhu cầu hạ tầng">Plan infrastructure needs</td>
+                <td data-en="Plan cloud resource allocation" data-vi="Lập kế hoạch phân bổ tài nguyên đám mây">Plan cloud resource allocation</td>
+                <td data-en="Plan security implementations" data-vi="Lập kế hoạch triển khai bảo mật">Plan security implementations</td>
             </tr>
             <tr>
-                <td class="first-column">Scalability Planning</td>
-                <td>Design for scalability</td>
+                <td class="first-column" data-en="Implementation" data-vi="Triển khai">Implementation</td>
+                <td data-en="Ensure alignment with architecture" data-vi="Đảm bảo phù hợp với kiến trúc">Ensure alignment with architecture</td>
+                <td data-en="Monitor progress" data-vi="Giám sát tiến độ">Monitor progress</td>
+                <td data-en="Remove impediments" data-vi="Loại bỏ trở ngại">Remove impediments</td>
+                <td data-en="Clarify business rules" data-vi="Làm rõ quy tắc kinh doanh">Clarify business rules</td>
+                <td></td>
+                <td data-en="Oversee technical implementation" data-vi="Giám sát triển khai kỹ thuật">Oversee technical implementation</td>
+                <td data-en="Develop features" data-vi="Phát triển tính năng">Develop features</td>
                 <td></td>
                 <td></td>
-                <td>Forecast business growth</td>
-                <td></td>
-                <td>Plan technical scalability</td>
-                <td>Implement scalable solutions</td>
-                <td>Test scalability</td>
-                <td>Plan infrastructure scalability</td>
-                <td>Design cloud scalability</td>
-                <td>Ensure security scales</td>
+                <td data-en="Implement cloud components" data-vi="Triển khai các thành phần đám mây">Implement cloud components</td>
+                <td data-en="Implement security measures" data-vi="Triển khai các biện pháp bảo mật">Implement security measures</td>
             </tr>
             <tr>
-                <td class="first-column">Disaster Recovery and Business Continuity</td>
-                <td>Design DR and BC architecture</td>
-                <td>Develop DR and BC plans</td>
+                <td class="first-column" data-en="Code Review" data-vi="Code Review">Code Review</td>
+                <td data-en="Review critical architectural components" data-vi="Đánh giá các thành phần kiến trúc quan trọng">Review critical architectural components</td>
                 <td></td>
-                <td>Define business RPO and RTO</td>
-                <td>Approve DR and BC plans</td>
-                <td>Plan technical DR processes</td>
-                <td>Implement DR mechanisms</td>
-                <td>Test DR procedures</td>
-                <td>Manage DR infrastructure</td>
-                <td>Design cloud DR solutions</td>
-                <td>Ensure security in DR</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td data-en="Lead code reviews" data-vi="Dẫn dắt đánh giá code">Lead code reviews</td>
+                <td data-en="Participate in code reviews" data-vi="Tham gia đánh giá code">Participate in code reviews</td>
+                <td></td>
+                <td></td>
+                <td data-en="Review cloud-specific code" data-vi="Đánh giá code liên quan đến đám mây">Review cloud-specific code</td>
+                <td data-en="Review security-critical code" data-vi="Đánh giá code quan trọng về bảo mật">Review security-critical code</td>
             </tr>
             <tr>
-                <td class="first-column">Vendor Management</td>
-                <td>Evaluate architectural impacts of vendors</td>
-                <td>Manage vendor contracts</td>
-                <td></td>
-                <td>Assess vendor business fit</td>
-                <td></td>
-                <td>Assess vendor technical fit</td>
+                <td class="first-column" data-en="Testing" data-vi="Testing">Testing</td>
+                <td data-en="Define test strategy" data-vi="Xác định chiến lược kiểm thử">Define test strategy</td>
                 <td></td>
                 <td></td>
+                <td data-en="Define acceptance criteria" data-vi="Xác định tiêu chí chấp nhận">Define acceptance criteria</td>
+                <td data-en="Review test results" data-vi="Đánh giá kết quả kiểm thử">Review test results</td>
+                <td data-en="Define technical test scenarios" data-vi="Xác định kịch bản kiểm thử kỹ thuật">Define technical test scenarios</td>
+                <td data-en="Create unit tests" data-vi="Tạo kiểm thử đơn vị">Create unit tests</td>
+                <td data-en="Execute tests, create test cases" data-vi="Thực hiện kiểm thử, tạo ca kiểm thử">Execute tests, create test cases</td>
+                <td data-en="Test deployment pipelines" data-vi="Kiểm thử pipeline triển khai">Test deployment pipelines</td>
+                <td data-en="Test cloud integrations" data-vi="Kiểm thử tích hợp đám mây">Test cloud integrations</td>
+                <td data-en="Perform security testing" data-vi="Thực hiện kiểm thử bảo mật">Perform security testing</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Continuous Integration" data-vi="Continuous Integration">Continuous Integration</td>
+                <td data-en="Ensure CI aligns with architecture" data-vi="Đảm bảo CI phù hợp với kiến trúc">Ensure CI aligns with architecture</td>
                 <td></td>
-                <td>Manage cloud vendors</td>
-                <td>Assess vendor security</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td data-en="Set up CI pipelines" data-vi="Thiết lập pipeline CI">Set up CI pipelines</td>
+                <td data-en="Maintain CI practices" data-vi="Duy trì thực hành CI">Maintain CI practices</td>
+                <td data-en="Automate tests" data-vi="Tự động hóa kiểm thử">Automate tests</td>
+                <td data-en="Manage CI/CD pipeline" data-vi="Quản lý pipeline CI/CD">Manage CI/CD pipeline</td>
+                <td data-en="Integrate cloud in CI/CD" data-vi="Tích hợp đám mây trong CI/CD">Integrate cloud in CI/CD</td>
+                <td data-en="Ensure security in CI/CD" data-vi="Đảm bảo bảo mật trong CI/CD">Ensure security in CI/CD</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Deployment" data-vi="Deployment">Deployment</td>
+                <td data-en="Oversee architectural aspects" data-vi="Giám sát các khía cạnh kiến trúc">Oversee architectural aspects</td>
+                <td data-en="Coordinate release" data-vi="Phối hợp phát hành">Coordinate release</td>
+                <td></td>
+                <td data-en="Verify business requirements are met" data-vi="Xác minh yêu cầu kinh doanh được đáp ứng">Verify business requirements are met</td>
+                <td data-en="Approve release" data-vi="Phê duyệt phát hành">Approve release</td>
+                <td data-en="Oversee technical aspects" data-vi="Giám sát các khía cạnh kỹ thuật">Oversee technical aspects</td>
+                <td data-en="Support deployment" data-vi="Hỗ trợ triển khai">Support deployment</td>
+                <td data-en="Verify deployment" data-vi="Xác minh triển khai">Verify deployment</td>
+                <td data-en="Execute deployment" data-vi="Thực hiện triển khai">Execute deployment</td>
+                <td data-en="Manage cloud deployment" data-vi="Quản lý triển khai đám mây">Manage cloud deployment</td>
+                <td data-en="Verify security in deployment" data-vi="Xác minh bảo mật trong triển khai">Verify security in deployment</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Performance Optimization" data-vi="Performance Optimization">Performance Optimization</td>
+                <td data-en="Identify architectural optimizations" data-vi="Xác định các tối ưu hóa kiến trúc">Identify architectural optimizations</td>
+                <td></td>
+                <td></td>
+                <td data-en="Prioritize optimization efforts" data-vi="Ưu tiên nỗ lực tối ưu hóa">Prioritize optimization efforts</td>
+                <td></td>
+                <td data-en="Lead optimization efforts" data-vi="Dẫn dắt nỗ lực tối ưu hóa">Lead optimization efforts</td>
+                <td data-en="Implement optimizations" data-vi="Triển khai tối ưu hóa">Implement optimizations</td>
+                <td data-en="Performance testing" data-vi="Kiểm thử hiệu suất">Performance testing</td>
+                <td data-en="Monitor system performance" data-vi="Giám sát hiệu suất hệ thống">Monitor system performance</td>
+                <td data-en="Optimize cloud resources" data-vi="Tối ưu hóa tài nguyên đám mây">Optimize cloud resources</td>
+                <td data-en="Security optimizations" data-vi="Tối ưu hóa bảo mật">Security optimizations</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Maintenance and Support" data-vi="Bảo trì và Hỗ trợ">Maintenance and Support</td>
+                <td data-en="Provide architectural support" data-vi="Cung cấp hỗ trợ kiến trúc">Provide architectural support</td>
+                <td></td>
+                <td></td>
+                <td data-en="Gather feedback for improvements" data-vi="Thu thập phản hồi để cải thiện">Gather feedback for improvements</td>
+                <td data-en="Provide feedback" data-vi="Cung cấp phản hồi">Provide feedback</td>
+                <td data-en="Oversee technical support" data-vi="Giám sát hỗ trợ kỹ thuật">Oversee technical support</td>
+                <td data-en="Resolve issues" data-vi="Giải quyết vấn đề">Resolve issues</td>
+                <td data-en="Regression testing" data-vi="Kiểm thử hồi quy">Regression testing</td>
+                <td data-en="Maintain infrastructure" data-vi="Duy trì hạ tầng">Maintain infrastructure</td>
+                <td data-en="Manage cloud resources" data-vi="Quản lý tài nguyên đám mây">Manage cloud resources</td>
+                <td data-en="Monitor security threats" data-vi="Giám sát mối đe dọa bảo mật">Monitor security threats</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Documentation" data-vi="Documentation">Documentation</td>
+                <td data-en="Document architecture decisions" data-vi="Tài liệu hóa quyết định kiến trúc">Document architecture decisions</td>
+                <td data-en="Ensure project documentation" data-vi="Đảm bảo tài liệu dự án">Ensure project documentation</td>
+                <td data-en="Document Agile processes" data-vi="Tài liệu hóa quy trình Agile">Document Agile processes</td>
+                <td data-en="Document business processes" data-vi="Tài liệu hóa quy trình kinh doanh">Document business processes</td>
+                <td></td>
+                <td data-en="Document technical specifications" data-vi="Tài liệu hóa thông số kỹ thuật">Document technical specifications</td>
+                <td data-en="Document code" data-vi="Tài liệu hóa code">Document code</td>
+                <td data-en="Document test cases" data-vi="Tài liệu hóa ca kiểm thử">Document test cases</td>
+                <td data-en="Document infrastructure" data-vi="Tài liệu hóa hạ tầng">Document infrastructure</td>
+                <td data-en="Document cloud architecture" data-vi="Tài liệu hóa kiến trúc đám mây">Document cloud architecture</td>
+                <td data-en="Document security measures" data-vi="Tài liệu hóa biện pháp bảo mật">Document security measures</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Knowledge Transfer" data-vi="Chuyển giao Kiến thức">Knowledge Transfer</td>
+                <td data-en="Lead architecture knowledge transfer" data-vi="Dẫn dắt chuyển giao kiến thức kiến trúc">Lead architecture knowledge transfer</td>
+                <td data-en="Facilitate team knowledge sharing" data-vi="Tạo điều kiện chia sẻ kiến thức nhóm">Facilitate team knowledge sharing</td>
+                <td></td>
+                <td data-en="Ensure business knowledge transfer" data-vi="Đảm bảo chuyển giao kiến thức kinh doanh">Ensure business knowledge transfer</td>
+                <td></td>
+                <td data-en="Lead technical knowledge transfer" data-vi="Dẫn dắt chuyển giao kiến thức kỹ thuật">Lead technical knowledge transfer</td>
+                <td data-en="Participate in knowledge sharing" data-vi="Tham gia chia sẻ kiến thức">Participate in knowledge sharing</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Compliance and Governance" data-vi="Compliance and Governance">Compliance and Governance</td>
+                <td data-en="Ensure architectural compliance" data-vi="Đảm bảo tuân thủ kiến trúc">Ensure architectural compliance</td>
+                <td data-en="Ensure project compliance" data-vi="Đảm bảo tuân thủ dự án">Ensure project compliance</td>
+                <td data-en="Ensure Agile best practices" data-vi="Đảm bảo thực hành tốt nhất Agile">Ensure Agile best practices</td>
+                <td data-en="Ensure business compliance" data-vi="Đảm bảo tuân thủ kinh doanh">Ensure business compliance</td>
+                <td></td>
+                <td data-en="Ensure technical compliance" data-vi="Đảm bảo tuân thủ kỹ thuật">Ensure technical compliance</td>
+                <td data-en="Adhere to standards" data-vi="Tuân thủ tiêu chuẩn">Adhere to standards</td>
+                <td data-en="Ensure quality standards" data-vi="Đảm bảo tiêu chuẩn chất lượng">Ensure quality standards</td>
+                <td data-en="Ensure operational compliance" data-vi="Đảm bảo tuân thủ vận hành">Ensure operational compliance</td>
+                <td data-en="Ensure cloud compliance" data-vi="Đảm bảo tuân thủ đám mây">Ensure cloud compliance</td>
+                <td data-en="Ensure security compliance" data-vi="Đảm bảo tuân thủ bảo mật">Ensure security compliance</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Innovation and Research" data-vi="Đổi mới và Nghiên cứu">Innovation and Research</td>
+                <td data-en="Research new architectural patterns" data-vi="Nghiên cứu các mẫu kiến trúc mới">Research new architectural patterns</td>
+                <td></td>
+                <td></td>
+                <td data-en="Research business innovations" data-vi="Nghiên cứu đổi mới kinh doanh">Research business innovations</td>
+                <td data-en="Provide market insights" data-vi="Cung cấp hiểu biết thị trường">Provide market insights</td>
+                <td data-en="Research new technologies" data-vi="Nghiên cứu công nghệ mới">Research new technologies</td>
+                <td data-en="Experiment with new tech" data-vi="Thử nghiệm công nghệ mới">Experiment with new tech</td>
+                <td data-en="Research testing innovations" data-vi="Nghiên cứu đổi mới kiểm thử">Research testing innovations</td>
+                <td data-en="Research DevOps innovations" data-vi="Nghiên cứu đổi mới DevOps">Research DevOps innovations</td>
+                <td data-en="Research cloud innovations" data-vi="Nghiên cứu đổi mới đám mây">Research cloud innovations</td>
+                <td data-en="Research security innovations" data-vi="Nghiên cứu đổi mới bảo mật">Research security innovations</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Scalability Planning" data-vi="Lập kế hoạch Khả năng mở rộng">Scalability Planning</td>
+                <td data-en="Design for scalability" data-vi="Thiết kế cho khả năng mở rộng">Design for scalability</td>
+                <td></td>
+                <td></td>
+                <td data-en="Forecast business growth" data-vi="Dự báo tăng trưởng kinh doanh">Forecast business growth</td>
+                <td></td>
+                <td data-en="Plan technical scalability" data-vi="Lập kế hoạch khả năng mở rộng kỹ thuật">Plan technical scalability</td>
+                <td data-en="Implement scalable solutions" data-vi="Triển khai giải pháp có thể mở rộng">Implement scalable solutions</td>
+                <td data-en="Test scalability" data-vi="Kiểm thử khả năng mở rộng">Test scalability</td>
+                <td data-en="Plan infrastructure scalability" data-vi="Lập kế hoạch khả năng mở rộng hạ tầng">Plan infrastructure scalability</td>
+                <td data-en="Design cloud scalability" data-vi="Thiết kế khả năng mở rộng đám mây">Design cloud scalability</td>
+                <td data-en="Ensure security scales" data-vi="Đảm bảo bảo mật có thể mở rộng">Ensure security scales</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Disaster Recovery and Business Continuity" data-vi="Khôi phục Thảm họa và Tiếp tục Kinh doanh">Disaster Recovery and Business Continuity</td>
+                <td data-en="Design DR and BC architecture" data-vi="Thiết kế kiến trúc DR và BC">Design DR and BC architecture</td>
+                <td data-en="Develop DR and BC plans" data-vi="Phát triển kế hoạch DR và BC">Develop DR and BC plans</td>
+                <td></td>
+                <td data-en="Define business RPO and RTO" data-vi="Xác định RPO và RTO kinh doanh">Define business RPO and RTO</td>
+                <td data-en="Approve DR and BC plans" data-vi="Phê duyệt kế hoạch DR và BC">Approve DR and BC plans</td>
+                <td data-en="Plan technical DR processes" data-vi="Lập kế hoạch quy trình DR kỹ thuật">Plan technical DR processes</td>
+                <td data-en="Implement DR mechanisms" data-vi="Triển khai cơ chế DR">Implement DR mechanisms</td>
+                <td data-en="Test DR procedures" data-vi="Kiểm thử quy trình DR">Test DR procedures</td>
+                <td data-en="Manage DR infrastructure" data-vi="Quản lý hạ tầng DR">Manage DR infrastructure</td>
+                <td data-en="Design cloud DR solutions" data-vi="Thiết kế giải pháp DR đám mây">Design cloud DR solutions</td>
+                <td data-en="Ensure security in DR" data-vi="Đảm bảo bảo mật trong DR">Ensure security in DR</td>
+            </tr>
+            <tr>
+                <td class="first-column" data-en="Vendor Management" data-vi="Quản lý Nhà cung cấp">Vendor Management</td>
+                <td data-en="Evaluate architectural impacts of vendors" data-vi="Đánh giá tác động kiến trúc của nhà cung cấp">Evaluate architectural impacts of vendors</td>
+                <td data-en="Manage vendor contracts" data-vi="Quản lý hợp đồng nhà cung cấp">Manage vendor contracts</td>
+                <td></td>
+                <td data-en="Assess vendor business fit" data-vi="Đánh giá sự phù hợp kinh doanh của nhà cung cấp">Assess vendor business fit</td>
+                <td></td>
+                <td data-en="Assess vendor technical fit" data-vi="Đánh giá sự phù hợp kỹ thuật của nhà cung cấp">Assess vendor technical fit</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td data-en="Manage cloud vendors" data-vi="Quản lý nhà cung cấp đám mây">Manage cloud vendors</td>
+                <td data-en="Assess vendor security" data-vi="Đánh giá bảo mật nhà cung cấp">Assess vendor security</td>
             </tr>
         </table>
     </div>
+
+    <script>
+        let currentLanguage = 'vi';
+
+        // Set Vietnamese as default on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateLanguage();
+        });
+
+        document.getElementById('language-toggle').addEventListener('click', function() {
+            currentLanguage = currentLanguage === 'en' ? 'vi' : 'en';
+            updateLanguage();
+        });
+
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en], [data-vi]');
+            elements.forEach(element => {
+                if (currentLanguage === 'en') {
+                    element.textContent = element.getAttribute('data-en');
+                } else {
+                    element.textContent = element.getAttribute('data-vi');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
